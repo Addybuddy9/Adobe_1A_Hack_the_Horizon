@@ -1,0 +1,44 @@
+{
+  "pdf_path": "D:\\Coding Work\\Hackathon\\Adobe_1a\\input\\Multilingual_Random_Text_50Pages.pdf",
+  "cached_at": 1753509234.1695678,
+  "data": {
+    "title": "The Wonders of Nature",
+    "outline": [
+      {
+        "level": "H1",
+        "text": "The Wonders of Nature",
+        "page": 1
+      },
+      {
+        "level": "H1",
+        "text": "Las Maravillas de la Naturaleza",
+        "page": 11
+      },
+      {
+        "level": "H1",
+        "text": "Les Merveilles de la Nature",
+        "page": 21
+      },
+      {
+        "level": "H1",
+        "text": "Die Wunder der Natur",
+        "page": 31
+      },
+      {
+        "level": "H1",
+        "text": "Le Meraviglie della Natura",
+        "page": 41
+      },
+      {
+        "level": "H1",
+        "text": "As Maravilhas da Natureza",
+        "page": 51
+      },
+      {
+        "level": "H1",
+        "text": "Чудеса природы",
+        "page": 61
+      }
+    ]
+  }
+}

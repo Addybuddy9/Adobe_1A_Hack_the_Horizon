@@ -1,0 +1,849 @@
+{
+  "pdf_path": "D:\\Coding Work\\Hackathon\\Adobe_Final\\input\\635479551856a-modeling-structured-finance-cash-flows-with-microsoft-excel.pdf",
+  "cached_at": 1753368307.2359219,
+  "data": {
+    "title": "635479551856A Modeling Structured Finance Cash Flows With Microsoft Excel",
+    "outline": [
+      {
+        "level": "H1",
+        "text": "Structured Finance",
+        "page": 2
+      },
+      {
+        "level": "H1",
+        "text": "Cash Flows with",
+        "page": 2
+      },
+      {
+        "level": "H1",
+        "text": "KEITH A. ALLMAN",
+        "page": 2
+      },
+      {
+        "level": "H1",
+        "text": "A Step-by-Step Guide",
+        "page": 2
+      },
+      {
+        "level": "H2",
+        "text": "John Wiley & Sons, Inc.",
+        "page": 2
+      },
+      {
+        "level": "H1",
+        "text": "Includes bibliographical references and index.",
+        "page": 7
+      },
+      {
+        "level": "H2",
+        "text": "About the Author",
+        "page": 8
+      },
+      {
+        "level": "H3",
+        "text": "Dates and Timing",
+        "page": 8
+      },
+      {
+        "level": "H3",
+        "text": "Delinquency, Default, and Loss Analysis",
+        "page": 9
+      },
+      {
+        "level": "H1",
+        "text": "Conclusion of the Cash Flow Waterfall",
+        "page": 10
+      },
+      {
+        "level": "H3",
+        "text": "Liabilities and the Cash Flow Waterfall",
+        "page": 10
+      },
+      {
+        "level": "H3",
+        "text": "Advanced Liability Structures: Triggers, Interest Rate Swaps, and Reserve Accounts",
+        "page": 10
+      },
+      {
+        "level": "H3",
+        "text": "Analytics and Output Reporting",
+        "page": 10
+      },
+      {
+        "level": "H1",
+        "text": "CHAPTER 10",
+        "page": 11
+      },
+      {
+        "level": "H2",
+        "text": "Understanding the Model",
+        "page": 11
+      },
+      {
+        "level": "H2",
+        "text": "Automation Using Visual Basic Applications (VBA)",
+        "page": 11
+      },
+      {
+        "level": "H1",
+        "text": "CHAPTER 11",
+        "page": 12
+      },
+      {
+        "level": "H2",
+        "text": "About the CD-ROM",
+        "page": 12
+      },
+      {
+        "level": "H2",
+        "text": "THE THREE BASIC ELEMENTS OF A CASH FLOW MODEL",
+        "page": 24
+      },
+      {
+        "level": "H3",
+        "text": "Cash Flow Structure",
+        "page": 25
+      },
+      {
+        "level": "H2",
+        "text": "THE PROCESS OF BUILDING A CASH FLOW MODEL",
+        "page": 26
+      },
+      {
+        "level": "H3",
+        "text": "Plan and Design",
+        "page": 26
+      },
+      {
+        "level": "H3",
+        "text": "Construct Basic Framework",
+        "page": 27
+      },
+      {
+        "level": "H3",
+        "text": "Develop Advanced Structure",
+        "page": 27
+      },
+      {
+        "level": "H3",
+        "text": "Validate Assumptions",
+        "page": 27
+      },
+      {
+        "level": "H2",
+        "text": "HOW THIS BOOK IS DESIGNED",
+        "page": 28
+      },
+      {
+        "level": "H3",
+        "text": "Test Model",
+        "page": 28
+      },
+      {
+        "level": "H2",
+        "text": "TIME PROGRESSION",
+        "page": 30
+      },
+      {
+        "level": "H2",
+        "text": "DATES AND TIMING ON THE INPUTS SHEET",
+        "page": 31
+      },
+      {
+        "level": "H2",
+        "text": "DAY-COUNT SYSTEMS: 30/360 VERSUS ACTUAL/360",
+        "page": 32
+      },
+      {
+        "level": "H2",
+        "text": "VERSUS ACTUAL/365",
+        "page": 32
+      },
+      {
+        "level": "H2",
+        "text": "MODEL BUILDER 1.1: INPUTS SHEET —DATES AND TIMING",
+        "page": 33
+      },
+      {
+        "level": "H1",
+        "text": "As a first introduction to the cash flow sheet, a general overview is helpful. The cash",
+        "page": 35
+      },
+      {
+        "level": "H2",
+        "text": "DATES AND TIMING ON THE CASH FLOW SHEET",
+        "page": 35
+      },
+      {
+        "level": "H2",
+        "text": "MODEL BUILDER 1.2: CASH FLOW SHEET —DATES AND TIMING",
+        "page": 36
+      },
+      {
+        "level": "H3",
+        "text": "Naming Cells and Ranges",
+        "page": 39
+      },
+      {
+        "level": "H3",
+        "text": "Data Validation Lists",
+        "page": 40
+      },
+      {
+        "level": "H2",
+        "text": "LOAN LEVEL VERSUS REPRESENTATIVE LINE AMORTIZATION",
+        "page": 44
+      },
+      {
+        "level": "H2",
+        "text": "HOW ASSET GENERATION IS DEMONSTRATED IN MODEL BUILDER",
+        "page": 48
+      },
+      {
+        "level": "H2",
+        "text": "ASSET GENERATION ON THE INPUTS SHEET",
+        "page": 48
+      },
+      {
+        "level": "H3",
+        "text": "Fixed Rate Amortization Inputs",
+        "page": 49
+      },
+      {
+        "level": "H3",
+        "text": "Floating Rate Amortization Inputs",
+        "page": 49
+      },
+      {
+        "level": "H2",
+        "text": "MODEL BUILDER 2.1: INPUTS SHEET ASSET ASSUMPTIONS",
+        "page": 50
+      },
+      {
+        "level": "H2",
+        "text": "AND THE VECTORS SHEET",
+        "page": 50
+      },
+      {
+        "level": "H2",
+        "text": "ASSET GENERATION ON THE CASH FLOW SHEET",
+        "page": 54
+      },
+      {
+        "level": "H2",
+        "text": "MODEL BUILDER 2.2: NOTIONAL ASSET AMORTIZATION",
+        "page": 54
+      },
+      {
+        "level": "H2",
+        "text": "ON THE CASH FLOW SHEET",
+        "page": 54
+      },
+      {
+        "level": "H2",
+        "text": "HOW PREPAYMENTS ARE TRACKED",
+        "page": 64
+      },
+      {
+        "level": "H3",
+        "text": "SMM: Single Monthly Mortality",
+        "page": 65
+      },
+      {
+        "level": "H3",
+        "text": "CPR: Conditional Prepayment Rate",
+        "page": 65
+      },
+      {
+        "level": "H3",
+        "text": "ABS: Absolute Prepayment Speed",
+        "page": 66
+      },
+      {
+        "level": "H2",
+        "text": "HISTORICAL PREPAYMENT DATA FORMATS",
+        "page": 67
+      },
+      {
+        "level": "H2",
+        "text": "BUILDING PREPAYMENT CURVES",
+        "page": 67
+      },
+      {
+        "level": "H2",
+        "text": "PREPAYMENT CURVES IN PROJECT MODEL BUILDER",
+        "page": 68
+      },
+      {
+        "level": "H2",
+        "text": "THE EFFECT OF PREPAYMENTS ON STRUCTURED TRANSACTIONS",
+        "page": 69
+      },
+      {
+        "level": "H2",
+        "text": "MODEL BUILDER 3.1: HISTORICAL PREPAYMENT ANALYSIS AND",
+        "page": 69
+      },
+      {
+        "level": "H2",
+        "text": "CREATING A PROJECTED PREPAYMENT CURVE",
+        "page": 69
+      },
+      {
+        "level": "H2",
+        "text": "MODEL BUILDER 3.2: INTEGRATING PROJECTED PREPAYMENTS IN",
+        "page": 74
+      },
+      {
+        "level": "H2",
+        "text": "ASSET AMORTIZATION",
+        "page": 74
+      },
+      {
+        "level": "H3",
+        "text": "Weighted Averages Using SUMPRODUCT and SUM",
+        "page": 77
+      },
+      {
+        "level": "H1",
+        "text": "Loss Analysis",
+        "page": 80
+      },
+      {
+        "level": "H2",
+        "text": "DELINQUENCIES VERSUS DEFAULTS VERSUS LOSS",
+        "page": 80
+      },
+      {
+        "level": "H2",
+        "text": "THE IMPORTANCE OF ANALYZING DELINQUENCY",
+        "page": 81
+      },
+      {
+        "level": "H2",
+        "text": "MODEL BUILDER 4.1: BUILDING HISTORICAL DELINQUENCY CURVES",
+        "page": 83
+      },
+      {
+        "level": "H2",
+        "text": "DERIVING HISTORICAL LOSS CURVES",
+        "page": 85
+      },
+      {
+        "level": "H2",
+        "text": "MODEL BUILDER 4.2: BUILDING HISTORICAL AND",
+        "page": 88
+      },
+      {
+        "level": "H2",
+        "text": "PROJECTED LOSS CURVES",
+        "page": 88
+      },
+      {
+        "level": "H2",
+        "text": "ANALYZING HISTORICAL LOSS CURVES",
+        "page": 90
+      },
+      {
+        "level": "H2",
+        "text": "MODEL BUILDER 4.2 CONTINUED",
+        "page": 90
+      },
+      {
+        "level": "H2",
+        "text": "PROJECTING LOSS CURVES",
+        "page": 91
+      },
+      {
+        "level": "H2",
+        "text": "INTEGRATING LOSS PROJECTIONS",
+        "page": 94
+      },
+      {
+        "level": "H3",
+        "text": "The Effects of Seasoning and Default Timing",
+        "page": 96
+      },
+      {
+        "level": "H2",
+        "text": "MODEL BUILDER 4.3: INTEGRATING DEFAULTS IN ASSET AMORTIZATION",
+        "page": 97
+      },
+      {
+        "level": "H1",
+        "text": "Figure 5.1 for a summary of events.",
+        "page": 105
+      },
+      {
+        "level": "H2",
+        "text": "MODEL BUILDER 5.1: HISTORICAL RECOVERY ANALYSIS",
+        "page": 106
+      },
+      {
+        "level": "H2",
+        "text": "PROJECTING RECOVERIES IN A CASH FLOW MODEL",
+        "page": 107
+      },
+      {
+        "level": "H2",
+        "text": "MODEL BUILDER 5.2: INTEGRATING RECOVERIES INTO",
+        "page": 108
+      },
+      {
+        "level": "H2",
+        "text": "PROJECT MODEL BUILDER",
+        "page": 108
+      },
+      {
+        "level": "H2",
+        "text": "FINAL POINTS REGARDING RECOVERIES",
+        "page": 109
+      },
+      {
+        "level": "H1",
+        "text": "Cash Flow Waterfall",
+        "page": 110
+      },
+      {
+        "level": "H1",
+        "text": "PRIORITY OF PAYMENTS AND THE CASH FLOW WATERFALL",
+        "page": 110
+      },
+      {
+        "level": "H2",
+        "text": "The Movement of Cash for an Individual Liability",
+        "page": 111
+      },
+      {
+        "level": "H2",
+        "text": "TYPES OF LIABILITIES",
+        "page": 112
+      },
+      {
+        "level": "H2",
+        "text": "MODEL BUILDER 6.1: CALCULATING FEES IN THE WATERFALL",
+        "page": 112
+      },
+      {
+        "level": "H2",
+        "text": "MODEL BUILDER 6.2: CALCULATING INTEREST IN THE WATERFALL",
+        "page": 116
+      },
+      {
+        "level": "H2",
+        "text": "MODEL BUILDER 6.3: CALCULATING PRINCIPAL IN THE WATERFALL",
+        "page": 121
+      },
+      {
+        "level": "H1",
+        "text": "The only difference in the formula are the references and that LiabAdvRate2 is",
+        "page": 123
+      },
+      {
+        "level": "H2",
+        "text": "UNDERSTANDING BASIC ASSET AND LIABILITY INTERACTIONS",
+        "page": 126
+      },
+      {
+        "level": "H1",
+        "text": "Advanced Liability Structures",
+        "page": 128
+      },
+      {
+        "level": "H1",
+        "text": "Triggers, Interest Rate Swaps,",
+        "page": 128
+      },
+      {
+        "level": "H2",
+        "text": "TRIGGERS AND THEIR AFFECT ON THE LIABILITY STRUCTURE",
+        "page": 128
+      },
+      {
+        "level": "H2",
+        "text": "MODEL BUILDER 7.1: INCORPORATING TRIGGERS",
+        "page": 129
+      },
+      {
+        "level": "H2",
+        "text": "MODEL BUILDER 7.2: INCORPORATING A BASIC INTEREST RATE SWAP",
+        "page": 135
+      },
+      {
+        "level": "H2",
+        "text": "FINAL NOTES ON SWAPS",
+        "page": 138
+      },
+      {
+        "level": "H2",
+        "text": "RESERVE ACCOUNTS",
+        "page": 138
+      },
+      {
+        "level": "H2",
+        "text": "MODEL BUILDER 7.3: INCORPORATING A CASH-FUNDED",
+        "page": 139
+      },
+      {
+        "level": "H2",
+        "text": "RESERVE ACCOUNT",
+        "page": 139
+      },
+      {
+        "level": "H1",
+        "text": "CONCLUSION OF THE CASH FLOW WATERFALL",
+        "page": 143
+      },
+      {
+        "level": "H2",
+        "text": "AND and OR",
+        "page": 144
+      },
+      {
+        "level": "H2",
+        "text": "INTERNAL TESTING",
+        "page": 146
+      },
+      {
+        "level": "H3",
+        "text": "Cash In versus Cash Out",
+        "page": 146
+      },
+      {
+        "level": "H1",
+        "text": "3. The Cash Out has more references since there many points that cash comes out",
+        "page": 147
+      },
+      {
+        "level": "H1",
+        "text": "AN7), but notice some of the less obvious references such as cells AV7, BC7,",
+        "page": 147
+      },
+      {
+        "level": "H2",
+        "text": "MODEL BUILDER 8.1: CASH IN VERSUS CASH OUT TEST",
+        "page": 147
+      },
+      {
+        "level": "H2",
+        "text": "MODEL BUILDER 8.2: BALANCES AT MATURITY TESTS",
+        "page": 149
+      },
+      {
+        "level": "H2",
+        "text": "Balances at Maturity",
+        "page": 149
+      },
+      {
+        "level": "H2",
+        "text": "MODEL BUILDER 8.3: ASSET PRINCIPAL CHECK TEST",
+        "page": 150
+      },
+      {
+        "level": "H2",
+        "text": "Asset Principal Check",
+        "page": 150
+      },
+      {
+        "level": "H2",
+        "text": "PERFORMANCE ANALYTICS",
+        "page": 151
+      },
+      {
+        "level": "H2",
+        "text": "MODEL BUILDER 8.4: CALCULATING MONTHLY YIELD",
+        "page": 151
+      },
+      {
+        "level": "H2",
+        "text": "Monthly Yield",
+        "page": 151
+      },
+      {
+        "level": "H3",
+        "text": "Calculating the Monthly Yield",
+        "page": 153
+      },
+      {
+        "level": "H2",
+        "text": "MODEL BUILDER 8.5: CALCULATING BOND-EQUIVALENT YIELD",
+        "page": 154
+      },
+      {
+        "level": "H2",
+        "text": "MODIFIED DURATION",
+        "page": 154
+      },
+      {
+        "level": "H3",
+        "text": "Bond-Equivalent Yield",
+        "page": 154
+      },
+      {
+        "level": "H2",
+        "text": "MODEL BUILDER 8.6: CALCULATING MODIFIED DURATION",
+        "page": 155
+      },
+      {
+        "level": "H2",
+        "text": "OUTPUT REPORTING",
+        "page": 156
+      },
+      {
+        "level": "H2",
+        "text": "MODEL BUILDER 8.7: CREATING THE OUTPUT REPORT",
+        "page": 157
+      },
+      {
+        "level": "H3",
+        "text": "The Importance of Testing and Output",
+        "page": 161
+      },
+      {
+        "level": "H3",
+        "text": "Conditional Formatting",
+        "page": 161
+      },
+      {
+        "level": "H1",
+        "text": "Enter the cell references in the Goal Seek dialog box.",
+        "page": 163
+      },
+      {
+        "level": "H3",
+        "text": "Array Formulas",
+        "page": 163
+      },
+      {
+        "level": "H2",
+        "text": "THE COMPLETE MODEL IN REVIEW",
+        "page": 166
+      },
+      {
+        "level": "H2",
+        "text": "UNDERSTANDING THE EFFECTS OF INCREASED LOSS",
+        "page": 168
+      },
+      {
+        "level": "H2",
+        "text": "VARYING PRINCIPAL ALLOCATION METHODOLOGIES",
+        "page": 171
+      },
+      {
+        "level": "H3",
+        "text": "Varying Prepayment Rates",
+        "page": 172
+      },
+      {
+        "level": "H2",
+        "text": "VARYING LOSS TIMING",
+        "page": 173
+      },
+      {
+        "level": "H2",
+        "text": "VARYING RECOVERY RATE AND LAG",
+        "page": 173
+      },
+      {
+        "level": "H2",
+        "text": "THE VALUE OF A SWAP",
+        "page": 174
+      },
+      {
+        "level": "H2",
+        "text": "ADDITIONAL TESTING",
+        "page": 174
+      },
+      {
+        "level": "H1",
+        "text": "Automation Using Visual Basic",
+        "page": 176
+      },
+      {
+        "level": "H1",
+        "text": "Applications (VBA)",
+        "page": 176
+      },
+      {
+        "level": "H2",
+        "text": "CONVENTIONS OF THIS CHAPTER",
+        "page": 176
+      },
+      {
+        "level": "H2",
+        "text": "THE VISUAL BASIC EDITOR",
+        "page": 177
+      },
+      {
+        "level": "H3",
+        "text": "The Menu Bar",
+        "page": 177
+      },
+      {
+        "level": "H3",
+        "text": "The Project Explorer and the Properties Window",
+        "page": 178
+      },
+      {
+        "level": "H2",
+        "text": "SIMPLE AUTOMATION FOR PRINTING AND GOAL SEEK",
+        "page": 179
+      },
+      {
+        "level": "H2",
+        "text": "MODEL BUILDER 10.1: AUTOMATING PRINT PROCEDURES",
+        "page": 179
+      },
+      {
+        "level": "H3",
+        "text": "For example, if a cell is an object and one wanted to change the background of a",
+        "page": 179
+      },
+      {
+        "level": "H2",
+        "text": "MODEL BUILDER 10.2: AUTOMATING GOAL SEEK TO",
+        "page": 182
+      },
+      {
+        "level": "H2",
+        "text": "OPTIMIZE ADVANCE RATES",
+        "page": 182
+      },
+      {
+        "level": "H2",
+        "text": "UNDERSTANDING LOOPING TO AUTOMATE THE ANALYTICS SHEET",
+        "page": 185
+      },
+      {
+        "level": "H2",
+        "text": "MODEL BUILDER 10.3: AUTOMATING GOAL SEEK TO PERFORM",
+        "page": 185
+      },
+      {
+        "level": "H2",
+        "text": "TRANSACTION ANALYTICS",
+        "page": 185
+      },
+      {
+        "level": "H2",
+        "text": "AUTOMATED SCENARIO GENERATION",
+        "page": 188
+      },
+      {
+        "level": "H2",
+        "text": "MODEL BUILDER 10.4: CREATING A TRANSACTION",
+        "page": 188
+      },
+      {
+        "level": "H2",
+        "text": "SCENARIO GENERATOR",
+        "page": 188
+      },
+      {
+        "level": "H2",
+        "text": "WORKING WITH MACROS IN EXCEL",
+        "page": 194
+      },
+      {
+        "level": "H2",
+        "text": "THE INVESTMENT BANKER’S PERSPECTIVE",
+        "page": 196
+      },
+      {
+        "level": "H2",
+        "text": "THE INVESTOR’S PERSPECTIVE",
+        "page": 197
+      },
+      {
+        "level": "H2",
+        "text": "THE ISSUER’S PERSPECTIVE",
+        "page": 197
+      },
+      {
+        "level": "H2",
+        "text": "THE FINANCIAL GUARANTOR’S PERSPECTIVE",
+        "page": 198
+      },
+      {
+        "level": "H2",
+        "text": "THE BIG PICTURE PERSPECTIVE",
+        "page": 198
+      },
+      {
+        "level": "H2",
+        "text": "RELEVANT TO THIS BOOK",
+        "page": 201
+      },
+      {
+        "level": "H3",
+        "text": "Cell Formatting",
+        "page": 202
+      },
+      {
+        "level": "H3",
+        "text": "Naming Ranges",
+        "page": 204
+      },
+      {
+        "level": "H3",
+        "text": "Adding Worksheets",
+        "page": 205
+      },
+      {
+        "level": "H3",
+        "text": "Goal Seek Tool",
+        "page": 206
+      },
+      {
+        "level": "H3",
+        "text": "Visual Basic Editor",
+        "page": 207
+      },
+      {
+        "level": "H1",
+        "text": "INTRODUCTION",
+        "page": 210
+      },
+      {
+        "level": "H2",
+        "text": "SYSTEM REQUIREMENTS",
+        "page": 210
+      },
+      {
+        "level": "H1",
+        "text": "The following sections provide a summary of the software and other materials you’ll",
+        "page": 211
+      },
+      {
+        "level": "H2",
+        "text": "USING THE CD WITH WINDOWS",
+        "page": 211
+      },
+      {
+        "level": "H2",
+        "text": "WHAT’S ON THE CD-ROM",
+        "page": 211
+      },
+      {
+        "level": "H2",
+        "text": "CUSTOMER CARE",
+        "page": 211
+      },
+      {
+        "level": "H3",
+        "text": "Model Builder Files",
+        "page": 211
+      },
+      {
+        "level": "H3",
+        "text": "Additional Files",
+        "page": 211
+      },
+      {
+        "level": "H1",
+        "text": "Summary sheet, 51–52",
+        "page": 219
+      }
+    ]
+  }
+}

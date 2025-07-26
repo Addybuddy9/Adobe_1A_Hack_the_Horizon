@@ -1,0 +1,11 @@
+# Ignore unnecessary files for Docker build
+.venv/
+cache/
+output/*.json
+*.pyc
+__pycache__/
+.git/
+.gitignore
+test_performance.py
+SUBMISSION_CHECKLIST.md
+README.md
