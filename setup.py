@@ -6,6 +6,37 @@ Setup script for Adobe 1A Challenge - Python 3.13 Compatibility Check
 import sys
 import subprocess
 import platform
+import os
+import venv
+
+def create_virtual_environment():
+    """Create virtual environment if it doesn't exist"""
+    venv_path = ".venv"
+    
+    if os.path.exists(venv_path):
+        print(f"✅ Virtual environment already exists at {venv_path}")
+        return True
+    
+    print(f"📦 Creating virtual environment at {venv_path}...")
+    try:
+        venv.create(venv_path, with_pip=True)
+        print(f"✅ Virtual environment created successfully!")
+        print(f"💡 To activate it manually, run:")
+        if platform.system() == "Windows":
+            print(f"   .venv\\Scripts\\activate")
+        else:
+            print(f"   source .venv/bin/activate")
+        return True
+    except Exception as e:
+        print(f"❌ Error creating virtual environment: {e}")
+        return False
+
+def get_venv_python():
+    """Get the Python executable path for the virtual environment"""
+    if platform.system() == "Windows":
+        return os.path.join(".venv", "Scripts", "python.exe")
+    else:
+        return os.path.join(".venv", "bin", "python")
 
 def check_python_version():
     """Check if Python version is compatible"""
@@ -25,9 +56,13 @@ def check_python_version():
 def install_dependencies():
     """Install required dependencies"""
     print("\n📦 Installing dependencies...")
+    
+    # Use virtual environment Python if it exists
+    python_exe = get_venv_python() if os.path.exists(".venv") else sys.executable
+    
     try:
-        subprocess.run([sys.executable, "-m", "pip", "install", "--upgrade", "pip"], check=True)
-        subprocess.run([sys.executable, "-m", "pip", "install", "-r", "requirements.txt"], check=True)
+        subprocess.run([python_exe, "-m", "pip", "install", "--upgrade", "pip"], check=True)
+        subprocess.run([python_exe, "-m", "pip", "install", "-r", "requirements.txt"], check=True)
         print("✅ Dependencies installed successfully!")
         return True
     except subprocess.CalledProcessError as e:
@@ -79,6 +114,10 @@ def main():
     if not check_python_version():
         return False
     
+    # Create virtual environment
+    if not create_virtual_environment():
+        return False
+    
     # Install dependencies
     if not install_dependencies():
         return False
@@ -88,7 +127,17 @@ def main():
         return False
     
     print("\n🎉 Setup completed successfully!")
-    print("You can now run: python main.py")
+    
+    # Provide run instructions based on whether venv was created
+    if os.path.exists(".venv"):
+        print("\n📋 Next steps:")
+        if platform.system() == "Windows":
+            print("1. Activate virtual environment: .venv\\Scripts\\activate")
+        else:
+            print("1. Activate virtual environment: source .venv/bin/activate")
+        print("2. Run the application: python main.py")
+    else:
+        print("You can now run: python main.py")
     
     return True
 
