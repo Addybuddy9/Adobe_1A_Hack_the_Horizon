@@ -22,10 +22,7 @@ def create_virtual_environment():
         venv.create(venv_path, with_pip=True)
         print(f"✅ Virtual environment created successfully!")
         print(f"💡 To activate it manually, run:")
-        if platform.system() == "Windows":
-            print(f"   .venv\\Scripts\\activate")
-        else:
-            print(f"   source .venv/bin/activate")
+        print(f"   {get_activation_command()}")
         return True
     except Exception as e:
         print(f"❌ Error creating virtual environment: {e}")
@@ -36,12 +33,23 @@ def get_venv_python():
     if platform.system() == "Windows":
         return os.path.join(".venv", "Scripts", "python.exe")
     else:
+        # Linux, macOS, and other Unix-like systems
         return os.path.join(".venv", "bin", "python")
+
+def get_activation_command():
+    """Get the virtual environment activation command for the current platform"""
+    if platform.system() == "Windows":
+        return ".venv\\Scripts\\activate"
+    else:
+        # Linux, macOS, and other Unix-like systems
+        return "source .venv/bin/activate"
 
 def check_python_version():
     """Check if Python version is compatible"""
     version = sys.version_info
     print(f"Python version: {version.major}.{version.minor}.{version.micro}")
+    print(f"Platform: {platform.system()} {platform.machine()}")
+    print(f"Python executable: {sys.executable}")
     
     if version.major != 3 or version.minor < 9:
         print("❌ Error: Python 3.9+ required (3.13 recommended)")
@@ -57,16 +65,41 @@ def install_dependencies():
     """Install required dependencies"""
     print("\n📦 Installing dependencies...")
     
-    # Use virtual environment Python if it exists
-    python_exe = get_venv_python() if os.path.exists(".venv") else sys.executable
+    # Use virtual environment Python if it exists and is valid
+    venv_python = get_venv_python()
+    if os.path.exists(".venv") and os.path.exists(venv_python):
+        python_exe = venv_python
+        print(f"Using virtual environment Python: {python_exe}")
+    else:
+        python_exe = sys.executable
+        print(f"Using system Python: {python_exe}")
+    
+    # Get the absolute path to requirements.txt
+    requirements_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "requirements.txt")
+    
+    if not os.path.exists(requirements_path):
+        print("❌ Error: requirements.txt not found")
+        return False
     
     try:
-        subprocess.run([python_exe, "-m", "pip", "install", "--upgrade", "pip"], check=True)
-        subprocess.run([python_exe, "-m", "pip", "install", "-r", "requirements.txt"], check=True)
+        # Upgrade pip first
+        print("Upgrading pip...")
+        result = subprocess.run([python_exe, "-m", "pip", "install", "--upgrade", "pip"], 
+                               check=True, capture_output=True, text=True)
+        
+        # Install requirements
+        print("Installing requirements...")
+        result = subprocess.run([python_exe, "-m", "pip", "install", "-r", requirements_path], 
+                               check=True, capture_output=True, text=True)
+        
         print("✅ Dependencies installed successfully!")
         return True
     except subprocess.CalledProcessError as e:
         print(f"❌ Error installing dependencies: {e}")
+        if e.stdout:
+            print(f"stdout: {e.stdout}")
+        if e.stderr:
+            print(f"stderr: {e.stderr}")
         return False
 
 def test_imports():
@@ -74,16 +107,7 @@ def test_imports():
     print("\n🧪 Testing imports...")
     
     required_modules = [
-        "fitz",  # PyMuPDF
-        "sklearn",
-        "numpy", 
-        "numba",
-        "cachetools",
-        "psutil",
-        "nltk",
-        "langdetect",
-        "spacy",
-        "pydantic"
+        "fitz",  # PyMuPDF - Only external dependency actually used
     ]
     
     failed_imports = []
@@ -106,11 +130,9 @@ def test_imports():
 def main():
     """Main setup function"""
     print("Adobe 1A Challenge - Python 3.13 Setup")
-    print("=" * 40)
+    print("=" * 50)
     
-    print(f"Platform: {platform.system()} {platform.machine()}")
-    
-    # Check Python version
+    # Check Python version and platform info
     if not check_python_version():
         return False
     
@@ -131,11 +153,18 @@ def main():
     # Provide run instructions based on whether venv was created
     if os.path.exists(".venv"):
         print("\n📋 Next steps:")
-        if platform.system() == "Windows":
-            print("1. Activate virtual environment: .venv\\Scripts\\activate")
-        else:
-            print("1. Activate virtual environment: source .venv/bin/activate")
+        print(f"1. Activate virtual environment: {get_activation_command()}")
         print("2. Run the application: python main.py")
+        print("\n💡 Platform-specific notes:")
+        if platform.system() == "Windows":
+            print("   - Use PowerShell or Command Prompt")
+            print("   - You can also use: .venv\\Scripts\\python.exe main.py")
+        elif platform.system() == "Darwin":  # macOS
+            print("   - Use Terminal")
+            print("   - You can also use: .venv/bin/python main.py")
+        else:  # Linux and other Unix-like
+            print("   - Use any terminal")
+            print("   - You can also use: .venv/bin/python main.py")
     else:
         print("You can now run: python main.py")
     
