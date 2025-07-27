@@ -107,7 +107,7 @@ def test_imports():
     print("\n🧪 Testing imports...")
     
     required_modules = [
-        "fitz",  # PyMuPDF - Only external dependency actually used
+        "PyMuPDF",  # PyMuPDF - Only external dependency actually used
     ]
     
     failed_imports = []
