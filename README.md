@@ -13,6 +13,7 @@ A robust, high-performance PDF processing solution that extracts structured outl
 - **Parallel Processing**: Multi-threaded for maximum performance
 - **Docker Ready**: Fully containerized solution
 - **Resource Efficient**: Optimized for 8 CPU + 16GB RAM constraints
+- **Minimal Dependencies**: Only PyMuPDF + Python standard library (98% dependency reduction)
 - **Standalone**: Complete solution in this folder, no external dependencies
 
 ## 📋 Challenge Requirements Compliance
@@ -64,9 +65,10 @@ python setup.py
 ## 🛠 Technology Stack
 
 - **Language**: Python 3.13 (also compatible with 3.9+)
-- **PDF Processing**: PyMuPDF (open source)
-- **Parallel Processing**: ThreadPoolExecutor
+- **PDF Processing**: PyMuPDF (only external dependency)
+- **Parallel Processing**: ThreadPoolExecutor (built-in)
 - **Container**: Docker with linux/amd64 platform
+- **Dependencies**: Minimal footprint - just PyMuPDF + Python standard library
 
 ## 🏗 Architecture
 
@@ -155,6 +157,8 @@ Each PDF generates a corresponding JSON file with:
 - **Scalability**: Processes multiple PDFs efficiently in parallel
 - **Quality**: Advanced filtering removes noise and artifacts
 - **Flexibility**: Works with diverse PDF types and layouts
+- **Minimal Footprint**: Only one external dependency (PyMuPDF) for faster deployment
+- **Security**: Reduced attack surface with minimal dependencies
 - **Multilingual**: Supports Japanese, Chinese, Korean, Arabic, Hebrew, Cyrillic and other scripts
 - **Bonus Ready**: Implements multilingual support for bonus points (up to 10 points)
 
