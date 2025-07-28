@@ -42,7 +42,7 @@ docker run --rm \
 
 ### Local Python Setup
 ```bash
-# Ensure Python +3.9 is installed (3.13.5 recommended)
+# Ensure Python 3.9+ is installed (3.13.5 recommended)
 python --version
 
 # Make the virtual env
