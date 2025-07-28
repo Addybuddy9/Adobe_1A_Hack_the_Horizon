@@ -1,11 +1,60 @@
-# Ignore unnecessary files for Docker build
-.venv/
-cache/
-output/*.json
-*.pyc
-__pycache__/
+# Adobe Challenge 1A - Docker Build Optimization
+# =================================================================
+
+# Development and Git files
 .git/
 .gitignore
-test_performance.py
-SUBMISSION_CHECKLIST.md
+.gitkeep
+*.md
 README.md
+SUBMISSION_CHECKLIST.md
+
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Cache and temporary files
+cache/
+.cache/
+temp/
+tmp/
+*.tmp
+*.temp
+
+# Processing directories (will be mounted as volumes)
+output/*.json
+input/*.pdf
+
+# Test and development files
+test_performance.py
+*test*.py
+*debug*.py
+
+# Log files
+*.log
+pdf_processor.log
+
+# OS specific files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
