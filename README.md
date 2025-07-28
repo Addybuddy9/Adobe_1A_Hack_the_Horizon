@@ -24,7 +24,7 @@ A robust, high-performance PDF processing solution that extracts structured outl
 ✅ **Network**: No internet access required  
 ✅ **Open Source**: Uses only open-source libraries  
 ✅ **Input/Output**: Processes `/app/input` → `/app/output`  
-✅ **Python Compatibility**: Python 3.13 ready (also works with 3.9+)
+✅ **Python Compatibility**: Python 3.13.5 ready 
 
 ## 🛠 Installation & Setup
 
@@ -64,7 +64,7 @@ python setup.py
 
 ## 🛠 Technology Stack
 
-- **Language**: Python 3.13 (also compatible with 3.9+)
+- **Language**: Python 3.13.5
 - **PDF Processing**: PyMuPDF (only external dependency)
 - **Parallel Processing**: ThreadPoolExecutor (built-in)
 - **Container**: Docker with linux/amd64 platform
