@@ -1,0 +1,17 @@
+# Docker Compose override for development
+version: '3.8'
+
+services:
+  pdf-processor:
+    environment:
+      - DEBUG_MODE=true
+      - LOG_LEVEL=DEBUG
+    volumes:
+      # Additional volume mounts for development
+      - ./src:/app/src:ro
+      - ./config.json:/app/config.json:ro
+      - ./pdf_processor.log:/app/pdf_processor.log
+    ports:
+      # Expose port for health checks in development
+      - "8080:8080"
+    restart: unless-stopped

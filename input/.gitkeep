@@ -1,0 +1,3 @@
+# Keep this directory in git
+# Place your PDF files here for processing
+# Files: input/*.pdf -> output/*.json

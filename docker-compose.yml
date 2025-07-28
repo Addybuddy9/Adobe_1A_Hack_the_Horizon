@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  # Challenge 1A - PDF Outline Extraction
+  pdf-processor:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: adobe_challenge_1a
+    volumes:
+      - ./input:/app/input:ro
+      - ./output:/app/output
+      - ./cache:/app/cache
+    environment:
+      - PYTHONUNBUFFERED=1
+      - PYTHONDONTWRITEBYTECODE=1
+      - PYTHONHASHSEED=random
+      - CHALLENGE_TYPE=1A
+    command: ["python", "main.py"]
+    restart: "no"
+    network_mode: none  # Offline operation as per challenge requirements
+    
+volumes:
+  input_data:
+    driver: local
+  output_data:
+    driver: local
+  cache_data:
+    driver: local
