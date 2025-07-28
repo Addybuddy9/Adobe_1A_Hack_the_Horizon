@@ -43,7 +43,7 @@ docker run --rm \
 
 ### Local Python Setup
 ```bash
-# Ensure Python 3.9+ is installed (3.13 recommended)
+# Ensure Python +3.9 is installed (3.13.5 recommended)
 python --version
 
 # Make the virtual env
@@ -58,7 +58,7 @@ python main.py
 
 ## 🛠 Technology Stack
 
-- **Language**: Python 3.13.5
+- **Language**: Python 3.9+ (3.13.5)
 - **PDF Processing**: PyMuPDF 
 - **Container**: Docker with linux/amd64 platform
 - **Dependencies**: Minimal footprint - just PyMuPDF + Python standard library
