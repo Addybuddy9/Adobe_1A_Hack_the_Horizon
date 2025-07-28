@@ -13,8 +13,7 @@ A robust, high-performance PDF processing solution that extracts structured outl
 - **Parallel Processing**: Multi-threaded for maximum performance
 - **Docker Ready**: Fully containerized solution
 - **Resource Efficient**: Optimized for 8 CPU + 16GB RAM constraints
-- **Minimal Dependencies**: Only PyMuPDF + Python standard library (98% dependency reduction)
-- **Standalone**: Complete solution in this folder, no external dependencies
+- **Dependencies**: Only PyMuPDF + Python 
 
 ## 📋 Challenge Requirements Compliance
 
