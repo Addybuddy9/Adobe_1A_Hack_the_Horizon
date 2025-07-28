@@ -4,16 +4,17 @@
 
 A robust, high-performance PDF processing solution that extracts structured outline data from PDF documents and outputs JSON files. This is a **standalone version** designed specifically for Adobe India Hackathon 2025 Challenge 1a requirements.
 
-## 🚀 Features
+## 🚀 What Can This Tool Do?
 
-- **Fast Processing**: Processes PDFs in under 10 seconds (optimized for 50-page documents)
-- **Universal Compatibility**: Works with any PDF format - forms, technical documents, reports, books
-- **Multilingual Support**: Handles Japanese, Chinese, Korean, Arabic, Hebrew, Cyrillic and other scripts
-- **Intelligent Extraction**: Uses advanced text analysis and formatting detection
-- **Parallel Processing**: Multi-threaded for maximum performance
-- **Docker Ready**: Fully containerized solution
-- **Resource Efficient**: Optimized for 8 CPU + 16GB RAM constraints
-- **Dependencies**: Only PyMuPDF + Python 
+This tool helps you:
+- Extract outlines from PDFs quickly (less than 10 seconds for a 50-page document)
+- Work with any type of PDF (books, reports, forms, technical documents)
+- Handle multiple languages (including Japanese, Chinese, Korean, Arabic, Hebrew, and more)
+- Detect document structure automatically
+- Process multiple files at once for better speed
+- Run either in Docker or directly on your computer
+- Work efficiently without heavy resource usage
+- Keep things simple with minimal software requirements
 
 ## 📋 Challenge Requirements Compliance
 
@@ -25,14 +26,17 @@ A robust, high-performance PDF processing solution that extracts structured outl
 ✅ **Input/Output**: Processes `/app/input` → `/app/output`  
 ✅ **Python Compatibility**: Python 3.13 ready (also works with 3.9+)
 
-## 🛠 Installation & Setup
+## 🛠 How to Install and Run
 
-### Docker 
+You have two ways to run this tool:
+
+### 1. Using Docker (Recommended for Most Users)
+If you have Docker installed, just run these commands:
 ```bash
-# Build the container
+# First time setup - create the processor
 docker build -t pdf-processor .
 
-# Run with your PDFs
+# Run it with your PDF files
 docker run --rm \
   -v $(pwd)/input:/app/input:ro \
   -v $(pwd)/output:/app/output \
@@ -40,18 +44,23 @@ docker run --rm \
   pdf-processor
 ```
 
-### Local Python Setup
+### 2. Direct Installation (For Python Users)
+If you prefer to run it directly with Python:
 ```bash
+<<<<<<< Updated upstream
 # Ensure Python 3.9+ is installed (3.13.5 recommended)
+=======
+# Check if you have Python 3.9 or newer
+>>>>>>> Stashed changes
 python --version
 
-# Make the virtual env
+# Create a clean environment
 python -m venv .venv
 
-# Manual installation
+# Install the required tools
 pip install -r requirements.txt
 
-# Run the processor
+# Start processing your PDFs
 python main.py
 ```
 
@@ -74,13 +83,15 @@ src/
 └── config.py            # Configuration management
 ```
 
-## 🔧 Algorithm Approach
+## 🔧 How Does It Work?
 
-1. **TOC Extraction**: First attempts to use PDF's built-in Table of Contents
-2. **Text Analysis**: Falls back to intelligent text analysis with formatting detection
-3. **Heading Classification**: Uses font size, formatting, and content patterns
-4. **Hierarchy Building**: Creates proper H1/H2/H3/H4 level structure
-5. **Quality Filtering**: Removes artifacts, dates, and incomplete text fragments
+The tool processes your PDFs in these steps:
+
+1. First, it looks for any existing table of contents in the PDF
+2. If that's not available, it analyzes the text layout and formatting
+3. It identifies headings based on how they look and where they appear
+4. It organizes everything into a clear structure (main headings, subheadings, etc.)
+5. Finally, it cleans up the results by removing any unnecessary text or numbers
 
 ## 📦 Quick Start Commands
 
@@ -97,12 +108,13 @@ docker run --rm \
   pdf-processor
 ```
 
-## 📊 Performance Metrics
+## 📊 How Fast Is It?
 
-- **Processing Speed**: ~0.1 seconds per PDF page
-- **Memory Usage**: <2GB for typical documents
-- **CPU Efficiency**: Utilizes all available cores
-- **Cache Performance**: 5-10x speedup on repeated processing
+Here's what you can expect:
+- It takes about 0.1 seconds to process each page
+- Uses less than 2GB of memory for most documents
+- Makes good use of your computer's processing power
+- Gets even faster when processing the same file again
 
 ## 🧪 Testing
 
