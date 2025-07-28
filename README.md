@@ -1,5 +1,3 @@
-Certainly! Here’s a more polished, professional version of your README summary. This style maintains clarity and approachability but adopts a more formal, concise tone suitable for technical reviewers, colleagues, or hackathon judges.
-
 # PDF Outline Extraction System
 
 This project delivers a robust, high-performance solution for extracting structured outlines from PDF documents. Developed for the Adobe India Hackathon 2025 (Challenge 1a), the system translates unstructured PDFs into clear, organized JSON representations of their logical structure.
@@ -78,5 +76,3 @@ For every PDF, the system generates a JSON file containing:
 - High throughput; supports parallel batch processing.
 - Minimal, secure dependencies (mainly PyMuPDF and standard libraries).
 - Advanced support for multilingual documents, broadening real-world applicability.
-
-If you have any questions or wish to contribute, please contact the maintainers. Thank you for your interest in this project.
